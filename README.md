@@ -133,7 +133,7 @@ cv2.flip(image_rgb, 1): Membalik citra secara horizontal. Parameter 1 menunjukka
 
 
 ### Diagram Alur Proses Pengolahan Citra 
-•  oad Image 
+• Load Image 
 • cv2.imread('tes.jpeg')
 • Membaca citra dari file
 • Convert to RGB
