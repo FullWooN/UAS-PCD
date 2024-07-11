@@ -128,6 +128,10 @@ cv2.flip(image_rgb, 1): Membalik citra secara horizontal. Parameter 1 menunjukka
 
 ![Image](https://github.com/users/FullWooN/projects/2/assets/105794758/1e62dc72-d99c-41a7-9615-90164121aa0b)
 
+### OUTPUT
+
+![output](https://github.com/FullWooN/UAS-PCD/assets/105794758/3561f6e5-57ec-4421-9dcb-8af8822599d2)
+
 
 
 
