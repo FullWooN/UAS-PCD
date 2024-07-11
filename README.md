@@ -129,11 +129,6 @@ cv2.flip(image_rgb, 1): Membalik citra secara horizontal. Parameter 1 menunjukka
 
 
 
-![Image](https://github.com/users/FullWooN/projects/2/assets/105794758/5bc628e5-3a75-4604-a8fb-a01b9f75d42b)
-![Image](https://github.com/users/FullWooN/projects/2/assets/105794758/dd2c344f-a823-4426-abcf-927a3cb935d2)
-
-
-
 
 
 Diagram Alur Proses Pengolahan Citra
