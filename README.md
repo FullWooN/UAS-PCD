@@ -4,14 +4,15 @@ NAMA:MUHAMMAD NAUFAL ARIEF , NIM:202231026 , KELAS:PCD B
 ### Penjelasan Teori
 **1. Pengolahan Citra (Image Processing)**
 Pengolahan citra adalah teknik untuk manipulasi citra digital dengan tujuan memperbaiki atau menganalisis citra tersebut. Teknik ini melibatkan berbagai transformasi geometris dan filter untuk meningkatkan kualitas citra atau mengekstrak informasi.
-2. Pustaka yang Digunakan
+
+### 2. Pustaka yang Digunakan
 •	OpenCV: Pustaka komputer visi open-source yang menyediakan alat dan fungsi untuk memproses citra dan video.
 •	NumPy: Pustaka untuk komputasi numerik di Python, sering digunakan untuk manipulasi array.
 •	Matplotlib: Pustaka untuk membuat visualisasi data, termasuk menampilkan citra dalam konteks pengolahan citra.
 ________________________________________
 ### Langkah-langkah dan Penjelasan 
 
-1. Mengimpor Pustaka
+### 1. Mengimpor Pustaka
 •  cv2: Digunakan untuk operasi pengolahan citra seperti membaca dan memanipulasi citra.
 •  numpy: Digunakan untuk manipulasi array dan operasi matematika.
 •  matplotlib.pyplot: Digunakan untuk menampilkan citra dalam bentuk grafis.
@@ -22,7 +23,7 @@ ________________________________________
 
 
 
-2. Memuat Citra
+### 2. Memuat Citra
 cv2.imread('tes.jpeg'): Memuat citra dari jalur yang diberikan dan mengembalikan citra sebagai array NumPy.
 
 
@@ -31,7 +32,7 @@ cv2.imread('tes.jpeg'): Memuat citra dari jalur yang diberikan dan mengembalikan
 
 
 
-3. Mengecek Apakah Citra Berhasil Dimuat
+### 3. Mengecek Apakah Citra Berhasil Dimuat
 if image is None: Mengecek apakah citra berhasil dimuat. Jika tidak, maka jalur file atau file itu sendiri mungkin salah.
 
 
@@ -40,7 +41,7 @@ if image is None: Mengecek apakah citra berhasil dimuat. Jika tidak, maka jalur 
 
 
 
-4. Mengonversi Citra dari BGR ke RGB
+### 4. Mengonversi Citra dari BGR ke RGB
 cv2.cvtColor(image, cv2.COLOR_BGR2RGB): Mengonversi citra dari format BGR (standar OpenCV) ke format RGB (standar Matplotlib).
 
 
@@ -48,7 +49,7 @@ cv2.cvtColor(image, cv2.COLOR_BGR2RGB): Mengonversi citra dari format BGR (stand
 
 
 
-5. Mendefinisikan Fungsi untuk Menampilkan Citra
+### 5. Mendefinisikan Fungsi untuk Menampilkan Citra
 •  plt.figure(figsize=(15, 10)): Membuat figure baru dengan ukuran 15x10 inci.
 •  plt.subplot(2, 3, i+1): Membuat subplot dalam grid 2x3 dan menempatkan citra pada posisi i+1.
 •  plt.imshow(images[i]): Menampilkan citra ke subplot.
@@ -61,7 +62,7 @@ cv2.cvtColor(image, cv2.COLOR_BGR2RGB): Mengonversi citra dari format BGR (stand
 
 
 
-6. Citra Asli
+### 6. Citra Asli
 original_image: Menyimpan citra asli dalam format RGB.
 
 
@@ -69,7 +70,7 @@ original_image: Menyimpan citra asli dalam format RGB.
 
 
 
-7. Rotasi Citra
+### 7. Rotasi Citra
 •  (h, w) = image.shape[:2]: Mendapatkan tinggi (h) dan lebar (w) citra.
 •  center = (w // 2, h // 2): Menentukan titik pusat citra.
 •  cv2.getRotationMatrix2D(center, 45, 1.0): Membuat matriks transformasi untuk rotasi sebesar 45 derajat.
@@ -80,7 +81,7 @@ original_image: Menyimpan citra asli dalam format RGB.
 
 
 
-8. Mengubah Ukuran Citra
+### 8. Mengubah Ukuran Citra
 cv2.resize(image_rgb, (w // 4, h // 4)): Mengubah ukuran citra menjadi seperempat dari ukuran aslinya.
 
 
@@ -88,7 +89,7 @@ cv2.resize(image_rgb, (w // 4, h // 4)): Mengubah ukuran citra menjadi seperempa
 
 
 
-9. Memotong Citra
+### 9. Memotong Citra
 •  start_row, start_col: Menentukan baris dan kolom awal untuk memotong citra.
 •  end_row, end_col: Menentukan baris dan kolom akhir untuk memotong citra.
 •  image_rgb[start_row:end_row, start_col:end_col]: Memotong citra untuk mendapatkan area tengah 50% dari ukuran asli.
@@ -98,7 +99,7 @@ cv2.resize(image_rgb, (w // 4, h // 4)): Mengubah ukuran citra menjadi seperempa
 
 
 
-10. Membalik Citra Secara Horizontal
+### 10. Membalik Citra Secara Horizontal
 cv2.flip(image_rgb, 1): Membalik citra secara horizontal. Parameter 1 menunjukkan flipping horizontal.
 
 
@@ -106,7 +107,7 @@ cv2.flip(image_rgb, 1): Membalik citra secara horizontal. Parameter 1 menunjukka
 
 
 
-11. Menerjemahkan Citra
+### 11. Menerjemahkan Citra
 •  np.float32([[1, 0, 100], [0, 1, 50]]): Matriks transformasi untuk menerjemahkan citra 100 piksel ke kanan dan 50 piksel ke bawah.
 •  cv2.warpAffine(image_rgb, M, (w, h)): Menerapkan transformasi untuk mendapatkan citra yang telah diterjemahkan.
 
@@ -116,7 +117,7 @@ cv2.flip(image_rgb, 1): Membalik citra secara horizontal. Parameter 1 menunjukka
 
 
 
-12. Menampilkan Semua Citra
+### 12. Menampilkan Semua Citra
 •  images: Daftar yang berisi citra yang akan ditampilkan.
 •  titles: Daftar judul untuk setiap citra.
 •  display_images(images, titles): Memanggil fungsi display_images untuk menampilkan semua citra dengan judul yang sesuai.
@@ -131,7 +132,7 @@ cv2.flip(image_rgb, 1): Membalik citra secara horizontal. Parameter 1 menunjukka
 
 
 
-Diagram Alur Proses Pengolahan Citra 
+### Diagram Alur Proses Pengolahan Citra 
 •  oad Image 
 • cv2.imread('tes.jpeg')
 • Membaca citra dari file
